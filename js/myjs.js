@@ -1,0 +1,1 @@
+alert("este sitio es seguro");
