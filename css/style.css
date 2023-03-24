@@ -7,20 +7,20 @@ img{
     height: 200px; /* Alto de la imagen */
 }
 tr:hover{
-    background-color: brown;
+    background-color: rgb(236, 11, 11);
 }
 
 input {
     border-radius: 3px ;
-    border: 3px solid greenyellow;
-    background-color: red;
+    border: 3px solid rgb(61, 61, 60);
+    background-color: rgb(204, 183, 183);
 }
 
 .inputcolor{
-    background-color: blue;
+    background-color: rgb(183, 183, 209);
 }
 
 #contraseña{
-    background-color: aqua;/*color de fondo de la caja*/
+    background-color: rgb(170, 199, 199);/*color de fondo de la caja*/
     color: rgb(0, 0, 0);/*color de la letra*/
 }
