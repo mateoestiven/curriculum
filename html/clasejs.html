@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cambiar_fondo{
+            background-color: aqua;
+            text-transform: uppercase;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body id="contenedor">
+    <h1>Mateo estiven </h1>
+
+    <input type="text " id="variable">
+    <button onclick="name_funcion()" id="name_event">calcular</button>
+    <h1 id="titulo"> </h1>
+
+    <p id="cambiar_fondo">cambiar fondo</p>
+
+    <script>
+        console.log("ingresa");
+
+        //variables
+
+        const nameuno = "ESTO ES CUALQUIER COSA";
+        var name_dos = "ESTO ES CUALQUIER COSA";
+        let nameTres = "ESTO ES CUALQUIER COSA";
+
+        console.log(nameuno +" " +name_dos +" " +nameTres);
+
+        //tipos de datos
+
+        let num_a = 10;
+        let num_b = 5.5;
+        let boolean = false;
+        let stringvar = "mi nombre es";
+        let arraynum = [ 1,2,3,4,5,"6","7","8"];
+        let dias_semana = ["Lunes","Martes","Miercoles","Jueves","Viernes"];
+        let users = [
+        { name: "Mateo", last_name: "Jacome", age: 20 },
+        { name: "Estiven", last_name: "pallares", age: 20},
+        { name: "Leidy", last_name: "Jacome", age: 17}
+        ]
+
+        //operadores aritmeticos + - * / % 
+
+        let suma = num_a + num_b;
+        let resta = num_a - num_b;
+        let multi = num_a * num_b;
+        let divi = num_a/num_b;
+        let module = num_a%num_b;
+        let expo = num_a^num_b;
+        console.log(suma);
+        suma = Math.round(suma);
+        console.log("suma = "+suma+" " +"resta = "+resta);
+
+        //operadores de comparacion = / == / === / <> / >= / > / <
+        // operadores logicos AND && / OR 
+
+        console.log(boolean+"--"+!boolean);
+
+        //estructuras condicionales IF / ELSE / ELSE IF / SWITCH (break)
+        //estructuras repetitivas FOR / WHILE / DO WHILE
+
+        let long_nameuno = nameuno.length;
+        console.log(long_nameuno);
+        if (long_nameuno>=22){
+            let name_minus = nameuno.toLowerCase();
+            console.log(name_minus);
+            console.log(dias_semana);
+            console.log(users[0].name);
+        }
+
+        for (let i=0; i<dias_semana.length;i++){
+            console.log(dias_semana[i])
+        }
+
+        //funciones
+        function name_funcion(){
+            let variable = document.getElementById('variable').value;
+            variable = variable.toUpperCase();
+            document.getElementById("titulo").innerText = variable;
+            document.getElementById("titulo").style.color = "green";
+        }
+
+        document.getElementById("name_event").addEventListener("dblclick", function(){
+           
+            let variable = document.getElementById('variable').value;
+            document.getElementById("titulo").style.background = "gray";
+
+        });
+
+        document.getElementById("cambiar_fondo").addEventListener("mouseover", function(){
+            document.getElementById("contenedor").style.background = "red";
+        })
+
+
+    </script>
+
+</body>
+</html>
