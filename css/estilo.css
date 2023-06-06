@@ -80,6 +80,11 @@ nav {
 .titulospro {
     text-align: left;
     margin: 20px 0;
+
+}
+
+.titulospro  i{
+    margin-right: 8px;
 }
 
 .contenido-header{
